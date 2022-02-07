@@ -1,0 +1,127 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+
+
+/* ------主要內容------ */
+main{       
+    padding:0 auto;  
+    display: flex; 
+    flex-direction: column;
+}
+main section.slider>ul>li>div>div.textbox{  
+    margin-left: 50px;
+    text-align: center;    
+    font-size: 5rem;
+    align-self: center;
+}
+main section.slider>ul>li>div{
+    width: 100%;
+    position: relative;
+    /* background-image:url(./img/banner/Image-C1.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 40vw;   */
+}
+main section.slider>ul>li>img{
+    width: 100%;
+}
+main section.slider>ul>li.second{
+    position: relative;
+    }
+main section.slider>ul>li.second>img.item{
+    position: absolute;
+    width: 30%;
+    z-index: 3;
+    top:60%;
+    left:10%;
+        }
+main section.main{    
+    margin:0 auto; 
+    width: 70%
+}
+section.main>div.box{
+    text-align: center;
+    padding:50px 0;    
+}
+main section.main>ul{        
+    display: flex;   
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;  
+      }
+main section.main>ul>li{            
+    text-align: center;  
+    width: 50%;
+    height: auto;
+    /* justify-content: center;  */
+     }
+main section.main>ul>li.textarea{     
+    flex-grow: 5;
+    flex-basis: 320px;
+    align-self: center;
+}
+main section.main>ul>li.img{ 
+    flex-basis: 320px;
+    flex-grow: 5;
+ }
+main section.main>ul div.textbox{ 
+    margin:0 10px;
+    }
+section.main>ul>li>img{
+    display: block;    
+    width: 100%;   
+}
+div.textbox>a{
+    margin: 10px auto;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    background-color: black;
+    color: white;   
+}
+div.textbox>a:hover{
+    background-color: gray;
+}
+section.bonus{
+    width: 70%;
+    margin: 0 auto;
+}
+section.bonus ul{
+    display: flex;    
+    justify-content: space-between;
+    text-align: center;
+    /* margin-bottom: 50px; */
+    }
+section.bonus ul>li{
+    width: 30%;
+    
+    justify-content: center;
+    box-sizing: border-box;
+        }
+section.bonus ul>li img{
+     width: 100%;
+               }
+section.bonus>div.box{
+    text-align: center;
+    padding:50px 0;  
+    }
+
+@media screen and (max-width:930px){
+    section.main>ul{        
+        /* margin: 0 auto; */
+        display: flex;
+}
+    section.main>ul>li{      
+        /* margin: 0 auto;  */
+    }
+    section.main>ul>li.img img{
+        order: 1;
+    }
+    section.main>ul>li.textarea{
+        order: 2;
+        padding: 20px 0;
+    }
+}

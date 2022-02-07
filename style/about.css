@@ -1,0 +1,234 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+
+
+/* ------主要內容------ */
+main{       
+    padding:0 auto;  
+    display: flex; 
+    flex-direction: column;
+}
+main section.slider>ul>li>div{
+    position: relative;
+}
+main section.slider>ul>li>img{
+    width: 100%;
+}
+main section.slider>ul>li.second{
+    position: relative;
+    }
+main section.slider>ul>li.second>img.item{
+    position: absolute;
+    width: 50%;
+    z-index: 3;
+    top:60%;
+    left: 70%;
+    transition:all 1s initial;  
+    animation: seeweed 4s ease-out infinite;
+    }
+main section.main{    
+    margin:0 auto; 
+    width: 70%
+}
+section.main>div.box{
+    text-align: center;
+    padding:50px 0;    
+}
+main section.main{    
+    margin:0 auto; 
+    width: 70%
+}
+section.main>div.box{
+    text-align: center;
+    padding:50px 0;    
+}
+main section.main>ul{        
+    display: flex;   
+    width: 100%;    
+    flex-wrap: wrap;  
+    margin-bottom: 50px;
+      }
+main section.main>ul>li{            
+    text-align: center;  
+    width: 50%;
+    height: auto;
+    position: relative;
+    
+    /* justify-content: center;  */
+     }
+main section.main>ul>li.textarea{     
+    flex-grow: 8;
+    flex-basis: 200px;
+    align-self: center;
+    padding: 0 50px ;
+    
+}
+main section.main>ul>li.textarea p{
+    font-size: 0.8rem;
+}
+main section.main>ul>li.img{ 
+    flex-basis: 250px;
+    flex-grow: 2;
+    margin-bottom:50px;
+ }
+main section.main>ul div.textbox{ 
+    margin:0 10px;
+    }
+section.main>ul>li>img{
+    display: block;    
+    width: 100%;   
+}
+div.textbox>a{
+    margin: 10px auto;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    background-color: black;
+    color: white;   
+}
+div.textbox>a:hover{
+    background-color: gray;
+}
+section.bonus{
+    width: 70%;
+    margin: 0 auto;
+}
+main section.slider2>ul>li>div{
+        position: relative;
+    }
+main section.slider2>ul>li>img{
+        width: 100%;
+        display: block;
+  
+    }
+main section.slider2>ul>li.second{
+        position: relative;
+    }
+main section.slider>ul>li.second2>img.item{
+        position: absolute;
+        width: 30%;
+        z-index: 3;
+        top:60%;
+        left: 70%;
+        }  
+footer{margin-top: 0;
+        padding-top:0;
+    }  
+li.img>img{
+    width: 100%;
+    z-index: 5;
+}
+li.img>img.item{
+    width: auto;
+    position: absolute;
+}
+li.img>img.first{
+    height: 65%;
+    top:80%;
+    right:50%;    
+}
+li.img>img.second{
+    height: 65%;
+    top:80%;
+    left:56%;    
+    opacity: 0.8;
+}
+li.img>img.third{
+    height:90%;
+    right:60%;
+    top:50%;    
+    opacity: 0.8;
+    z-index: -2;
+    transition:all 1s initial;  
+    animation: seeweed 6s ease-out infinite;
+}
+li.img>img.fourth{
+    height:100%;
+    right:60%;
+    top: 30%;    
+    opacity: 9;
+    z-index: -1;
+    transition:all 1s initial;  
+    animation: seeweed 5s ease-out infinite;
+}
+
+
+@keyframes seeweed{
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+/* @keyframes seeweed2 */
+
+
+ul li.img>div.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-3 ;
+    background: url("../style/img/story/AdobeStock_95966290-700x500.jpg") no-repeat top center;
+    background-size:cover;  
+    background-attachment: fixed;
+   
+}   
+ul li.img>div.odd{    
+    top: 10%;
+    right: 10%;
+} 
+ul li.img>div.even{    
+    top: 10%;
+    left: 10%;
+}  
+
+
+
+
+
+/* ul li.img>div.mask {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 100%;
+    height: 100%;
+    z-index:-1 ;
+    background: url("../style/img/story/AdobeStock_95966290-700x500.jpg") no-repeat top center;
+    background-size:100%;  
+    background-attachment: fixed;
+}    */
+
+
+
+
+    
+@media screen and (max-width:930px){
+    section.main>ul{        
+        /* margin: 0 auto; */
+        display: flex;
+}
+    section.main>ul>li{      
+        /* margin: 0 auto;  */
+        margin: auto 0;
+        position: relative;
+        
+        
+    }
+    section.main>ul>li.img{
+        order: 1;
+        width:500px;
+    }
+    section.main>ul>li.textarea{
+        order: 2;
+        
+        padding: 20px 0;
+        width:500px;
+    }
+}

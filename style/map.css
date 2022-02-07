@@ -1,0 +1,156 @@
+@import url(./reset.css);
+@import url(./header_footer.css);
+
+
+/* ------主要內容------ */
+main{       
+    padding:0 auto;      
+}
+main section.main>ul.map{        
+    display: flex;   
+    flex-wrap: wrap;  
+    justify-content: space-between;
+}
+main section.main>ul.map>li.photo{     
+    flex-grow: 9;
+    text-align: center;  
+    width: 50%;
+    height: 600px;  
+    position: relative;  
+    }
+iframe{
+    display: block;
+    width:100%;
+    height: 650px;
+}
+ul.showbar{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+ul.showbar li{
+    width:10%;
+    height: 10%; 
+    
+    background-color: #fff;
+}
+ul.showbar li img{
+    width: 100%;   
+    height: 100%;
+}
+
+main section.main>ul.map>li.content{ 
+    flex-grow: 1;
+    width: 30%;
+    
+    padding: 10px;
+    
+}
+
+main section.main>ul.cart>li>img.product{  
+    width: 100%;
+    height: 100%;      
+         }
+main section.main>ul.cart>li>img.favorite{
+    width: 30px;
+    position: absolute;
+    top:50px;
+    right: 50px;
+}
+main section.main>ul.cart>li:hover{
+    /* outline: solid 0.5px gray; */
+   
+    border-radius: 5px;
+}
+div.choice>ul{
+    display: flex;    
+    justify-content: space-between;
+}
+div.choice>ul>li{
+    
+    font-size: 0.8rem;
+    text-align: center;
+    width: 40%;
+    padding: 3px;
+    border: gray solid 0.5px;
+    border-radius: 5px;
+}
+ul.cart>li.content>div{
+    padding:5px 0;
+    border-bottom:  gray solid 1px;
+}
+
+li.content h4{
+    line-height: 60px;
+}
+li.content>p{
+    border-bottom:grey solid 0.3px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+}
+
+div.buttom{
+    font-size: 1rem;
+    width: 30%;
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+ul.cart>li>img.product{
+    width:20%;
+}
+div.choice>ul>li:hover{
+    outline: black 1px solid;
+    cursor: pointer;
+}
+ul.showbar li:hover{
+    border-bottom: solid 1px black;
+    cursor: pointer;
+}
+
+
+ul.slider{
+    width: 100%;
+    height: 30vw;
+    margin: 30px auto;
+    
+    display: flex;
+}
+
+ul.slider>li{
+    background-size: cover;
+    background-position: center center;
+    transition:all 0.5s ease-in-out;
+    border: white 2px solid;
+}
+
+
+ul.slider>li.set1{
+    background-image: url(../style/img/shop/1.jpg);
+    flex-grow: 3;    
+}
+
+ul.slider>li.set2{
+    background-image: url(../style/img/shop/2.jpg);
+    flex-grow: 1;
+}
+
+ul.slider>li.set3{
+    background-image: url(../style/img/shop/4.jpg);
+    flex-grow: 1;
+}
+ul.slider>li.set4{
+    background-image: url(../style/img/shop/5.jpg);
+    flex-grow: 1
+}
+
+ul.slider>li:hover{
+    flex-grow: 3;
+}

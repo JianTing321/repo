@@ -1,0 +1,263 @@
+@import url(./reset.css);
+
+*{  
+    font-family: 'Noto Sans TC', sans-serif,'Roboto', sans-serif;    
+    line-height: 1.6;
+    color: rgb(75, 75, 75);
+}
+h1{}
+h2{ font-size: 2rem;}
+h3{ font-size: 1.5rem;
+    font-weight:bold;
+    line-height: 3;}
+h4{ font-size: 1.2rem;
+    font-weight:bold;}
+h5{}
+h6{}
+p{font-size: 1rem;}
+/* ------------header------------ */
+body{
+    /* background-image: url(./img/bgi.jpg); */
+    background-size: cover;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    }
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    box-shadow: rgba(15, 15, 15, 0.322) 2px 2px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header div.box{
+    width:70%;
+    margin: 0 auto;
+    display: flex;    
+    }
+header div.logo{
+    padding-top: 15px;
+    height: 100px;     
+    }
+header div.logo>img{
+    /* width: 100%; */
+    height: 100%;
+  
+}
+header div.list{
+    width: 100%;
+    height: 100px;
+    }
+header section.first{
+    display: flex;
+    height: 60%;
+    /* border: black 3px solid; */
+    padding-top:10px;
+   }
+header section.first>img{
+    padding-left: 30px;
+    max-height: 80%;
+    padding-top:10px;    
+}
+header section.first>ul{
+    /* padding-top:20px; */
+    margin-top: 5px;
+    display: flex;
+    margin-left: auto;
+    /* height: 50px; */
+    box-sizing: border-box;
+}
+header section.first>ul>li{    
+    padding:20px 1px 0 0;    
+    
+}
+header section.first>ul>li>a>img{
+    width: 25px;    
+}
+header section.second>ul{
+    display: flex;
+    padding-top: 10px;
+    /* border:blue solid 3px; */
+}
+header section.second>ul>li{
+    width: 15%;
+    margin-right: 5px; 
+    display: flex;     
+    height: 40px;
+}
+header section.second>ul>div{
+        margin-left: auto;
+}
+header section.second>ul>div>input{    
+    height: 35px;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: solid 0.5px gray;
+   
+}
+header section.second>ul>li>a{
+    box-sizing: border-box;    
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    line-height:1;
+    color: rgb(56, 55, 55);    
+    padding-top: 10px;
+    }
+header section a:hover{
+    border-bottom: rgb(138, 137, 136) 2.5px solid;
+    color: black;
+}
+
+/* ------主要內容------ */
+main{       
+    padding:0 auto;  
+    display: flex; 
+    flex-direction: column;
+}
+main section.slider>ul>li>div>div.textbox{
+    box-sizing: border-box;
+    
+    display: inline-block;    
+    margin-left: 50px;
+    text-align: center;
+    
+    font-size: 5rem;
+    align-self: center;
+}
+main section.slider>ul>li>div{
+    background-image:url(./img/banner/Image-C1.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 40vw;
+    box-sizing: border-box;    
+    display: flex;  
+}
+main section.slider>ul div{
+ 
+}
+main section.main{    
+    margin:0 auto; 
+    width: 70%
+}
+section.main>div.box{
+    text-align: center;
+    padding:50px 0;    
+}
+main section.main>ul{        
+    display: flex;   
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;  
+      }
+main section.main>ul>li{            
+    text-align: center;  
+    width: 50%;
+    height: auto;
+    /* justify-content: center;  */
+     }
+main section.main>ul>li.textarea{ 
+    
+    flex-grow: 5;
+    flex-basis: 320px;
+    align-self: center;
+}
+main section.main>ul>li.img{ 
+    flex-basis: 320px;
+    flex-grow: 5;
+ }
+main section.main>ul div.textbox{ 
+       
+    display:block;        
+    margin:0 10px;
+    }
+section.main>ul>li>img{
+    display: block;    
+    width: 100%;   
+}
+div.textbox>a{
+    margin: 10px auto;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    background-color: black;
+    color: white;   
+}
+div.textbox>a:hover{
+    background-color: gray;
+}
+section.bonus{
+    width: 70%;
+    margin: 0 auto;
+}
+section.bonus ul{
+    display: flex;    
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+section.bonus ul>li{
+    width: 30%;
+    
+    justify-content: center;
+    box-sizing: border-box;
+        }
+section.bonus ul>li img{
+     width: 100%;
+               }
+section.bonus>div.box{
+    text-align: center;
+    padding:50px 0;  
+   
+    }
+@media screen and (max-width:930px){
+    section.main>ul{        
+        /* margin: 0 auto; */
+        display: flex;        
+    
+}
+    section.main>ul>li{      
+        /* margin: 0 auto;  */
+    }
+    section.main>ul>li.img img{
+        order: 1;
+    }
+    section.main>ul>li.textarea{
+        order: 2;
+        padding: 20px 0;
+    }
+}
+
+/* -----頁腳------ */
+footer{
+    background-color:black;
+    width: 100%;
+    height: 150px;
+    
+}
+footer ul{
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li{
+    padding:0 30px 0 30px;
+}
+
+footer ul li img{
+    display: block;
+    height: 45%;    
+}
