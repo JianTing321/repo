@@ -13,6 +13,7 @@ main section.slider>ul>li>div{
 }
 main section.slider>ul>li>img{
     width: 100%;
+    
 }
 main section.slider>ul>li.second{
     position: relative;
@@ -54,6 +55,7 @@ main section.main>ul>li{
     height: auto;
     position: relative;
     
+    
     /* justify-content: center;  */
      }
 main section.main>ul>li.textarea{     
@@ -70,6 +72,7 @@ main section.main>ul>li.img{
     flex-basis: 250px;
     flex-grow: 2;
     margin-bottom:50px;
+   
  }
 main section.main>ul div.textbox{ 
     margin:0 10px;
@@ -175,9 +178,10 @@ ul li.img>div.mask {
     width: 100%;
     height: 100%;
     z-index:-3 ;
-    background: url(".") no-repeat top center;
-    background-size:100%;  
-    background-attachment: fixed;
+    /* background-color: rgb(131, 127, 127); */
+    background: url("../style/img/story/water-ripple-blue-background-turquoise2.jpg") no-repeat;
+    background: size 100%;
+    /* background-attachment:fixed; */
    
 }   
 ul li.img>div.odd{    
