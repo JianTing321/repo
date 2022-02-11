@@ -150,7 +150,11 @@ ul.slider>li.set4{
     background-image: url(../style/img/shop/5.jpg);
     flex-grow: 1
 }
-
 ul.slider>li:hover{
     flex-grow: 3;
 }
+
+
+
+
+

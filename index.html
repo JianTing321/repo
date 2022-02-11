@@ -9,58 +9,75 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+ 
 </head>
 
 <body>
-    <div class="login-background">  
+    <div class="login-background">
     </div>
 
-        <div class="login">
-            <div class="loginbox">
-                <h4>會員登入</h4>
-                <ul class="login_ul">
-                    <li>
-                        <h5>帳號：</h4><input class="username" type="text" name=""" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
-                    </li>
-                    <li>
-                        <h5>密碼：</h5><input class="password" type="text" name=""size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
-                       
-                        <a class="login" href="#"><h6>忘記密碼</h6></a>
-                    </li>
-                </ul>
-                <a class="login" href="#">登入</a>
-                <section class="sign">
+    <div class="login">
+        <div class="loginbox">
+            <h4>會員登入</h4>
+            <ul class="login_ul">
+                <li>
+                    <h5>帳號：</h4><input class="username" type="text" name=""" size=" 15"
+                            style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+                </li>
+                <li>
+                    <h5>密碼：</h5><input class="password" type="text" name="" size="15"
+                        style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+
+                    <a class="login" href="#">
+                        <h6>忘記密碼</h6>
+                    </a>
+                </li>
+            </ul>
+            <a class="login" href="#">登入</a>
+            <section class="sign">
                 <h4>建立會員帳號</h4>
-                <h5>建立帳號以管理訂單、個人資訊，收到最新活動消息通知，以及收藏清單。</h5>                     
+                <h5>建立帳號以管理訂單、個人資訊，收到最新活動消息通知，以及收藏清單。</h5>
                 <a class="sign" href="#">註冊</a>
-                 </section>
-            </div>
-        </div>        
-    
-      <header>
+            </section>
+        </div>
+    </div>
+
+    <header>
         <div class="box">
             <div class="logo">
-                <img src="./img/logo/LOGO/logo+word-02-03.svg" alt="" srcset="">
+                <a href="index.html">
+                    <img src="./img/logo/LOGO/logo+word-02-03.svg" alt="" srcset="">
+                </a>
             </div>
+
             <div class="list">
                 <section class="first">
-                    <img src="./img/logo/LOGO/logo+word-02-02.svg" alt="" srcset="">
+                    <a href="index.html">
+                        <img src="./img/logo/LOGO/logo+word-02-02.svg" alt="" srcset="">
+                    </a>
                     <ul>
-                        <li><a href=""><img src="./img/icon/user.svg" alt="" srcset=""></a></li>
-                        <li><a href="#"><img src="./img/icon/heart.svg" alt="" srcset=""></a></li>
-                        <li><a href="#"><img src="./img/icon/bag.svg" alt="" srcset=""></a></li>
+                        <li class="search">
+                            <div class="search-box">
+                                <button class="btn-search">
+                                    <div class="search"><img src="./style/img/icon/header/icon-04.svg" alt="" srcset="">
+                                    </div>
+                                </button>
+                                <input type="text" class="input-search" placeholder="濃萃修復眼霜">
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="./img/icon/header/icon-01.svg" alt="" srcset=""></a></li>
+                        <li><a href="#"><img src="./img/icon/header/icon-02.svg" alt="" srcset=""></a></li>
+                        <li><a href="#"><img src="./img/icon/header/icon-03.svg" alt="" srcset=""></a></li>
                     </ul>
                 </section>
                 <section class="second">
                     <ul>
-                        <li><a class="" href="index.html">首頁</a></li>
-                        <li><a class="" href="eyes.html">眼部保養</a></li>
-                        <li><a class="" href="lip.html">唇部保養</a></li>
-                        <li><a class="" href="about.html">關於我們</a></li>
-                        <li><a class="" href="map.html">門市資訊</a></li>
-                        <div><input type="search" name="" id="" placeholder="  請輸入文字"></div>
+                        <li><a class="index" href="index.html" style= "border-bottom: rgb(56, 55, 55) 3px solid;" color="black;">首頁</a></li>
+                        <li><a class="eyes" href="eyes.html">眼部保養</a></li>
+                        <li><a class="lip" href="lip.html">唇部保養</a></li>
+                        <li><a class="about" href="about.html">關於我們</a></li>
+                        <li><a class="map" href="map.html">門市資訊</a></li>                        
                     </ul>
                 </section>
             </div>
@@ -69,7 +86,7 @@
     <main>
         <section class="slider">
             <ul>
-                <li class="second">                    
+                <li class="second">
                     <img src="./img/banner/Image-C1.jpg" alt="" srcset="">
                     <img class="item" src="./style/img/banner/00.png" alt="" srcset="">
                 </li>
@@ -127,22 +144,22 @@
             <ul>
                 <li><img src="./style/img/banner/about/1.jpg" alt="" srcset="">
                     <h3>精美體驗禮</h3>
-                    <h4>購買任一商品即可獲得<br>
+                    <h5>購買任一商品即可獲得<br>
                         海洋拉娜為您準備的<br>
                         迷你版修護產品
-                    </h4>
+                    </h5>
                 </li>
                 <li><img src="./style/img/banner/about/2.jpg" alt="" srcset="">
                     <h3>禮品包裝</h3>
-                    <h4>奢寵體驗豈止於護膚，<br>
+                    <h5>奢寵體驗豈止於護膚，<br>
                         線上購物即可享有精美禮品包裝。
-                    </h4>
+                    </h5>
                 </li>
                 <li><img src="./style/img/banner/about/3.jpg" alt="" srcset="">
                     <h3>免費運送</h3>
-                    <h4>於海洋拉娜官網消費，<br>
+                    <h5>於海洋拉娜官網消費，
                         產品免費送貨到府。
-                    </h4>
+                    </h5>
                 </li>
             </ul>
         </section>

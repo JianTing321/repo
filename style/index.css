@@ -8,12 +8,7 @@ main{
     display: flex; 
     flex-direction: column;
 }
-main section.slider>ul>li>div>div.textbox{  
-    margin-left: 50px;
-    text-align: center;    
-    font-size: 5rem;
-    align-self: center;
-}
+
 main section.slider>ul>li>div{
     width: 100%;
     position: relative;
@@ -30,9 +25,9 @@ main section.slider>ul>li.second{
     }
 main section.slider>ul>li.second>img.item{
     position: absolute;
-    width: 30%;
+    width: 25%;
     z-index: 3;
-    top:60%;
+    top:70%;
     left:10%;
         }
 main section.main{    
@@ -109,6 +104,10 @@ section.bonus>div.box{
     padding:50px 0;  
     }
 
+    
+
+
+
 @media screen and (max-width:930px){
     section.main>ul{        
         /* margin: 0 auto; */
@@ -125,3 +124,21 @@ section.bonus>div.box{
         padding: 20px 0;
     }
 }
+@media screen and (max-width:800px){  
+    section.bonus>div.box{
+        border-top: 1px solid gray;
+    }
+    section.bonus>ul{ 
+        flex-direction: column;
+    }
+    section.bonus>ul>li{
+        width: 100%;
+    }
+    section.bonus>ul>li>img{
+        margin-top:30px;
+    }
+}
+
+
+
+

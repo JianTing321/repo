@@ -9,33 +9,48 @@
     <link rel="stylesheet" href="./style/product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="box">
             <div class="logo">
-                <img src="./img/logo/LOGO/logo+word-02-03.svg" alt="" srcset="">
+                <a href="index.html">
+                    <img src="./img/logo/LOGO/logo+word-02-03.svg" alt="" srcset="">
+                </a>
             </div>
+
             <div class="list">
                 <section class="first">
-                    <img src="./img/logo/LOGO/logo+word-02-02.svg" alt="" srcset="">
+                    <a href="index.html">
+                        <img src="./img/logo/LOGO/logo+word-02-02.svg" alt="" srcset="">
+                    </a>
                     <ul>
-                        <li><a href=""><img src="./img/icon/user.svg" alt="" srcset=""></a></li>
-                        <li><a href="#"><img src="./img/icon/heart.svg" alt="" srcset=""></a></li>
-                        <li><a href="#"><img src="./img/icon/bag.svg" alt="" srcset=""></a></li>
+                        <li class="search">
+                            <div class="search-box">
+                                <button class="btn-search">
+                                    <div class="search"><img src="./style/img/icon/header/icon-04.svg" alt="" srcset="">
+                                    </div>
+                                </button>
+                                <input type="text" class="input-search" placeholder="濃萃修復眼霜">
+                            </div>
+                        </li>
+                        <li><a href=""><img src="./img/icon/header/icon-01.svg" alt="" srcset=""></a></li>
+                        <li><a href="#"><img src="./img/icon/header/icon-02.svg" alt="" srcset=""></a></li>
+                        <li><a href="#"><img src="./img/icon/header/icon-03.svg" alt="" srcset=""></a></li>
                     </ul>
                 </section>
                 <section class="second">
                     <ul>
-                        <li><a class="" href="index.html">首頁</a></li>
-                        <li><a class="" href="eyes.html">眼部保養</a></li>
-                        <li><a class="" href="lip.html">唇部保養</a></li>
-                        <li><a class="" href="about.html">關於我們</a></li>
-                        <li><a class="" href="map.html">門市資訊</a></li>
-                        <div><input type="search" name="" id="" placeholder="  請輸入文字"></div>
+                        <li><a class="index" href="index.html">首頁</a></li>
+                        <li><a class="eyes" href="eyes.html" >眼部保養</a></li>
+                        <li><a class="lip" href="lip.html" style= "border-bottom: rgb(56, 55, 55) 3px solid;" color="black;">唇部保養</a></li>
+                        <li><a class="about" href="about.html">關於我們</a></li>
+                        <li><a class="map" href="map.html">門市資訊</a></li>      
+                        
+                        
+                        
                     </ul>
                 </section>
             </div>
@@ -44,7 +59,7 @@
     <main>
         <section class="slider">
             <ul>
-                <li class="second">                    
+                <li class="second">
                     <img src="./style/img/product/LM/02/bn1.jpg" alt="" srcset="">
                     <img class="item" src="./style/img/banner/00.png" alt="" srcset="">
                 </li>
@@ -56,39 +71,43 @@
                 <p>歐森歐森眼部護理系列滿足您從脆弱眼周肌膚的所有養護需求</p>
             </div>
             <ul class="product">
-                <li>
-                    <a href="">
-                    <img class="product" src="./style/img/product/LM/02/01.png" alt="">
-                    <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
-                    <h4>The Lip Polish</h4>
-                    <h3>星砂柔化修護唇膜</h3>
-                    <p>提供雙唇的精緻而寵愛的感官體驗，能溫柔褪除唇部乾燥表面，同時深層調理細緻的唇部肌膚。            
-                        <br> $ 99,999
-                    </p>
+               
+                <li><a href="eyes_cart.html">
+                        <div class="product_photo">
+                            <img class="product" src="./style/img/product/LM/02/01.png" alt="">
+                            <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
+                        </div>
+                        <h4>The Lip Polish</h4>
+                        <h3>星砂柔化修護唇膜</h3>
+                        <p>提供雙唇的精緻而寵愛的感官體驗，能溫柔褪除唇部乾燥表面，同時深層調理細緻的唇部肌膚。
+                            <br> $ 99,999
+                        </p>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                    <img class="product" src="./style/img/product/LM/02/01.png" alt="">
-                    <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
+                <li><a href="eyes_cart.html">
+                    <div class="product_photo">
+                        <img class="product" src="./style/img/product/LM/02/01.png" alt="">
+                        <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
+                    </div>
                     <h4>The Lip Polish</h4>
                     <h3>星砂柔化修護唇膜</h3>
-                    <p>提供雙唇的精緻而寵愛的感官體驗，能溫柔褪除唇部乾燥表面，同時深層調理細緻的唇部肌膚。            
+                    <p>提供雙唇的精緻而寵愛的感官體驗，能溫柔褪除唇部乾燥表面，同時深層調理細緻的唇部肌膚。
                         <br> $ 99,999
                     </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
+                </a>
+            </li>
+            <li><a href="eyes_cart.html">
+                <div class="product_photo">
                     <img class="product" src="./style/img/product/LM/02/01.png" alt="">
                     <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
-                    <h4>The Lip Polish</h4>
-                    <h3>星砂柔化修護唇膜</h3>
-                    <p>提供雙唇的精緻而寵愛的感官體驗，能溫柔褪除唇部乾燥表面，同時深層調理細緻的唇部肌膚。            
-                        <br> $ 99,999
-                    </p>
-                    </a>
-                </li>
+                </div>
+                <h4>The Lip Polish</h4>
+                <h3>星砂柔化修護唇膜</h3>
+                <p>提供雙唇的精緻而寵愛的感官體驗，能溫柔褪除唇部乾燥表面，同時深層調理細緻的唇部肌膚。
+                    <br> $ 99,999
+                </p>
+            </a>
+            </li>
             </ul>
         </section>
     </main>
