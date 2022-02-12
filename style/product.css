@@ -48,6 +48,7 @@ main section.main>ul.product>li{
 main section.main>ul.product>li>a{
     text-decoration: none;
    background-color: initial;
+   
     
 }
 main section.main>ul.product>li>a>div.product_photo>img.product{            
