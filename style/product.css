@@ -1,6 +1,12 @@
 @import url(./reset.css);
 @import url(./header_footer.css);
 
+h4{
+    line-height: 2.5rem;
+}
+p{
+    font-size: 0.9rem;
+}
 
 /* ------主要內容------ */
 main{       
@@ -8,60 +14,124 @@ main{
     display: flex; 
     flex-direction: column;
 }
-main section.slider>ul>li>div{
+/* 唇部產品視覺圖 */
+main section.slider>ul>li.lips{
+    background-image: url(../style/img/product/LM/02/bn1.jpg);
+    background-size: 100%;
+    /* background-position: top center; */
+    background-repeat: no-repeat;
+    height: 40vw;
+}
+main section.slider>ul>li.lip>div{
     position: relative;
 }
-main section.slider>ul>li>img{
+main section.slider>ul>li.lip>img{
     width: 100%;
 }
-main section.slider>ul>li.second{
+
+/* 眼部產品視覺圖 */
+main section.slider>ul>li.eyes{
+    background-image: url(../style/img/product/LM/01/bn1.jpg);
+    background-size: 100%;
+    /* background-position: top center; */
+    background-repeat: no-repeat;
+    height: 40vw;
+}
+main section.slider>ul>li.eyes>div{
+    position: relative;
+}
+main section.slider>ul>li.eyes>img{
+    width: 100%;
+}
+
+
+/* 唇部產品 */
+main section.slider>ul>li.lips{
     position: relative;
     }
-main section.slider>ul>li.second>img.item{
+main section.slider>ul>li.lips>img.item{
     position: absolute;
     width: 25%;
     z-index: 3;
     top:70%;
     left: 70%;
+    transition:all 1s initial;  
+    animation: lips_item 5s ease-out infinite;
     }
+@keyframes lips_item{
+        0%{
+            transform: rotatez(20deg);        
+        }
+        50%{
+            transform: rotatez(27deg)
+        }
+        100%{
+            transform: rotatez(20deg);
+        }
+        }
+
+/* 眼部產品 */
+main section.slider>ul>li.eyes{
+    position: relative;
+    }
+main section.slider>ul>li.eyes>img.item{
+    position: absolute;
+    width: 25%;
+    z-index: 3;
+    top:70%;
+    left: 70%;
+    transition:all 1s initial;  
+    animation: eyes_item 5s ease-out infinite;
+}
+@keyframes eyes_item{
+    0%{
+        transform: rotatez(20deg);        
+    }
+    50%{
+        transform: rotatez(27deg)
+    }
+    100%{
+        transform: rotatez(20deg);
+    }
+}
+   
+    
 main section.main{    
     margin:0 auto; 
-    width: 70%
+    max-width: 70%;
 }
 section.main>div.box{
     text-align: center;
     padding:50px 0;    
 }
 main section.main>ul.product{        
-    display: flex;   
+    display: flex;     
+    flex-wrap: wrap;      
     margin: 0 auto;
-    flex-wrap: wrap;  
-    justify-content: space-between;
+    
 }
 main section.main>ul.product>li{ 
     /* position: relative;            */
-    text-align: center;  
-    width: 30%;
+    text-align: center;     
+    flex-basis: 300px;
+    flex-grow: 1;
     height: auto;  
     padding: 20px 10px;
-     }
+}
 main section.main>ul.product>li>a{
     text-decoration: none;
    background-color: initial;
-   
-    
 }
 main section.main>ul.product>li>a>div.product_photo>img.product{            
     text-align: center;  
     width: 100%;
     height: auto;    
     transition: all .5s ease-in;  
-   
-         }
+}
 main section.main>ul.product>li>a>div.product_photo{        
     transition: all .5s ease-in;  
     position: relative;
-         }
+}
 main section.main>ul.product>li>a>div.product_photo>img.favorite{
     position: absolute;
     width: 20px;
@@ -77,4 +147,66 @@ main section.main>ul.product>li:hover {
 main section.main>ul.product>li a img:hover{
     transform: scale(1.1);
 }
+
+@media screen and (max-width:575.98px) {  
+       
+    main section.slider>ul>li.lips/* 唇部產品 */{
+        background-image: url(../style/img/product/LM/02/lips.jpg);
+        background-size: 100%;        
+        background-repeat: no-repeat;
+        height: 90vw;        
+    }        
+    main section.slider>ul>li.lips>img.item/* 唇部產品 */{
+        transform: translate(-50%,0);           
+        position: absolute;
+        width: 60%;
+        z-index: 3;
+        top:70%;
+        right:30%;
+           
+    }
+    main section.slider>ul>li.lips>img.item{       
+        transform: rotatez(220deg);   
+        animation:none;
+    }
+    @keyframes lips_item{
+       all{ 
+       }         
+    }  
+    main section.slider>ul>li.eyes/* 眼部產品 */{
+        background-size: 100%;        
+        background-image: url(../style/img/product/LM/01/eyes.jpg);
+        height: 90vw;                    
+        background-repeat: no-repeat;
+                 }
+    main section.slider>ul>li.eyes>img.item/* 眼部產品 */{
+        position: absolute;
+        width: 60%;
+        z-index: 3;
+        top:60%;
+        right:10%;
+        transform: translate(-50%,0);        
+    }
+    main section.slider>ul>li.eyes>img.item{       
+        transform: rotatez(220deg);   
+        animation:none;
+    }
+    @keyframes eyes_item{
+       all{ 
+       }         
+}  
+   
+    ul.product li{
+        /* width: 575px; */
+        flex-basis: 570px;
+        /* text-align: center;  
+        width: 90%;
+        height: auto;  
+        padding: 20px 10px; */        
+    }
+    main section.main{    
+        margin:0 auto; 
+        width: 100%
+}}
+
 

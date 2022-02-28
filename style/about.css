@@ -12,12 +12,20 @@ main section.slider>ul>li>div{
     position: relative;
 }
 main section.slider>ul>li>img{
-    width: 100%;
-    
+    width: 100%;    
 }
+main section.slider>ul>li{
+background-image: url(../style/img/story/973675-nature-animals-sea-seaweed-underwater-seals-sun.jpg);
+   background-size: 100%;
+   /* background-position: top center; */
+   background-repeat: no-repeat;
+   height: 40vw;
+}
+
 main section.slider>ul>li.second{
     position: relative;
     }
+
 main section.slider>ul>li.second>img.item{
     position: absolute;
     width: 50%;
@@ -26,7 +34,83 @@ main section.slider>ul>li.second>img.item{
     left: 70%;
     transition:all 1s initial;  
     animation: seeweed 4s ease-out infinite;
-    }
+}
+    
+
+div.video{
+    position: absolute;
+    position: relative;
+    width: 25%;    
+    height: auto;
+    top: 60%;
+    left: 10%; 
+    display: flex;  
+    justify-content: center;    
+    align-items: center;
+}
+
+div.video::before{
+    content:"";
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+}
+video{    
+    border-radius: 50%; 
+    position: absolute;
+    width:80%;
+    height: 79%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 3;     
+    transition:all 1s initial;      
+    animation: seeweed 10s ease-out infinite;
+
+}
+main section.slider>ul>li.second>div.video>div.circle{       
+    position: absolute;     
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    z-index: 3;   
+    transition:all 1s initial;      
+    animation: seeweed 10s ease-out infinite;    
+}
+main section.slider>ul>li.second>div.video>div.circle img{
+    width: 100%;
+}
+
+
+
+main section.slider>ul>li.second>img.seconditem{
+    position: absolute;
+    width: 30%;
+    z-index: 3;
+    top: 180%;
+    left: -10%;
+    transition:all 1s initial;  
+    animation: seeweed 4s ease-out infinite;
+        }
+/* div.circle{
+        margin: 0 auto;
+        width:30%;
+        height: 30%;        
+        clip-path: circle(100% at 100% 100%);
+
+}
+video{
+  width: 400%;
+   padding-top: auto;
+    
+} */
+
+ 
+
+
 main section.main{    
     margin:0 auto; 
     width: 70%
@@ -59,7 +143,7 @@ main section.main>ul>li{
     /* justify-content: center;  */
      }
 main section.main>ul>li.textarea{     
-    flex-grow: 8;
+    flex-grow: 9;
     flex-basis: 200px;
     align-self: center;
     padding: 0 50px ;
@@ -69,8 +153,8 @@ main section.main>ul>li.textarea p{
     
 }
 main section.main>ul>li.img{ 
-    flex-basis: 250px;
-    flex-grow: 2;
+    flex-basis: 300px;
+    flex-grow: 1;
     margin-bottom:50px;
    
  }
@@ -110,6 +194,7 @@ main section.slider2>ul>li>img{
 main section.slider2>ul>li.second{
         position: relative;
     }
+    
 main section.slider>ul>li.second2>img.item{
         position: absolute;
         width: 30%;
@@ -194,8 +279,6 @@ ul li.img>div.even{
 
 
 
-
-
 /* ul li.img>div.mask {
     position: absolute;
     top: 10%;
@@ -211,29 +294,135 @@ ul li.img>div.even{
 
 
 
-    
-@media screen and (max-width:930px){
+
+@media screen and (max-width:575.98px){         
+    main section.slider>ul>li{
+            background-image: url(../style/img/story/Image-C2.jpg);
+            background-size: 100%;        
+            background-repeat: no-repeat;
+            height: 90vw;        
+         }        
+    main section.slider>ul>li.lips>img.item{ /* 關於 */
+        transform: translate(-50%,0);           
+        position: absolute;
+        width: 60%;
+        z-index: 3;
+        top:70%;
+        right:30%;  
+    }
+    div.video{
+        position: absolute;
+        position: relative;
+        width: 70%;    
+        height: auto;
+        top: 50%;
+        left: 0%; 
+        transform: translate(-50%,0);
+        display: flex;  
+        justify-content: center;    
+        align-items: center;
+    }
+}
+@media screen and (max-width:800px) {      
+    main section.main>ul>li.textarea{     
+        flex-grow: 1;
+        flex-basis: 200px;
+        align-self: center;
+        padding: 0 50px ;
+    }       
+    li.background_image{
+        display: block;
+        height: 300px;        
+    }
+    section.main ul{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    main section.main>ul>li.textarea{   
+        width: 100%;  
+             
+        padding: 0 ;        
+    }  
+    ul>li.img>.mask,ul>li.img>img.bgi,ul>li.img>img.item{
+        display: none;
+    }
+    main section.main>ul>li.textarea{     
+        flex-grow: 1;
+        width: 100%;
+        align-self: center;
+        padding: 0;
+        order: 2;
+    }
+    main section.main>ul>li.img{ 
+        width: 100%;
+        height: 100vh;
+        flex-grow: 2;             
+     }
+    div.imgchange{       
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding: 0 auto;
+        width: max-content;
+        width: 100%;
+        height: 100%;
+        background-position: center center;  
+        order: 1;
+     }
+    div.imgchange.first{
+        background-image: url(../style/img/story/pexels-mart-production-8450353.jpg);
+    }
+    div.imgchange.second{
+        background-image: url(../style/img/story/story_bgi/2-2000x1333.jpg);
+    }
+    div.imgchange.third{
+        background-image: url(../style/img/story/story_bgi/3-2000x1333.jpg);
+    }
+   li.img>img.third.item,li.img>img.fourth.item{
+    display: block;        
+    right:60%;
+    top: 120%;
+    width:90%;
+    height: auto;
+    }
+    main section.slider>ul>li.second>img.item{
+        width: 80%;
+        height: auto;
+    }
+    main section.slider>ul>li.second>img.seconditem{
+        width: 100%;
+        top: 100vh;
+        left: -300px;
+        position: absolute;
+        z-index: 0;
+    }    
+}
+@media screen and (max-width:950px) { 
+    main section.main>ul>li.textarea {
+        padding:0 20px;
+
+    }
+} 
+
+
+/* @media screen and (max-width:930px){
     section.main>ul{        
-        /* margin: 0 auto; */
+       
         display: flex;
 }
     section.main>ul>li{      
-        /* margin: 0 auto;  */
+       
         margin: auto 0;
-        position: relative;
-        
-        
+        position: relative;      
     }
+}
     section.main>ul>li.img{
         order: 1;
         width:500px;
     }
     section.main>ul>li.textarea{
-        order: 2;
-        
+        order: 2;        
         padding: 20px 0;
         width:500px;
     }
-}
-
-
+} */

@@ -17,19 +17,98 @@ main section.slider>ul>li>div{
     background-repeat: no-repeat;
     height: 40vw;   */
 }
+main section.slider>ul>li{
+    background-image: url(./img/banner/Image-C1.jpg);
+    background-size: 100%;
+    /* background-position: top center; */
+    background-repeat: no-repeat;
+    height: 40vw;
+}
 main section.slider>ul>li>img{
     width: 100%;
 }
 main section.slider>ul>li.second{
     position: relative;
     }
-main section.slider>ul>li.second>img.item{
+main section.slider>ul>li.second>div.product_box{
     position: absolute;
+    position: relative;
     width: 25%;
     z-index: 3;
     top:70%;
     left:10%;
+    }
+main section.slider>ul>li.second>div.product_box>img.item{
+    width: 100%;
+    position: relative;
+    }
+main section.slider>ul>li.second>div.product_box>div.product_shadow{
+    position: absolute;        
+    width: 100%;
+    z-index: 3;
+    top:0;
+    left:0;
+    }
+main section.slider>ul>li.second>div.product_box>div.product_shadow>img.item{
+    width: 100%;   
+    transition:all 1s initial;
+    animation:shadow 15s ease-out infinite;
         }
+main section.slider>ul>li.second>div.product_box>div.product_shadow>div.item_rotate{
+    position: relative;  
+    position: absolute;        
+    width: 100%;
+    top:0;
+    left:0; 
+    z-index: 3;  
+    transition:all 1s initial;
+    animation:translate 15s ease-out infinite;  
+        }
+main section.slider>ul>li.second>div.product_box>div.product_shadow>div.item_rotate>img.rotate{
+    width: 100%;
+    position: absolute;  
+    top:0;
+    left:0; 
+    transition:all 1s initial;
+    animation:rotate 15s ease-out infinite;
+        }
+
+
+@keyframes shadow{
+        0%{
+            transform: translatex(0);        
+        }
+        50%{
+            transform: translatex(-40%);  
+        }
+        100%{
+            transform: translatex(0);  
+        }
+    }
+@keyframes translate{
+        0%{
+            transform: translatex(0);        
+        }
+        50%{
+            transform: translatex(-40%);  
+        }
+        100%{
+            transform: translatex(0);  
+        }
+    }
+
+@keyframes rotate{
+        0%{
+            transform: rotate(0);        
+        }
+        50%{
+            transform: rotate(-220deg);  
+        }
+        100%{
+            transform: rotate(0);  
+        }
+    }
+
 main section.main{    
     margin:0 auto; 
     width: 70%
@@ -92,7 +171,6 @@ section.bonus ul{
     }
 section.bonus ul>li{
     width: 30%;
-    
     justify-content: center;
     box-sizing: border-box;
         }
@@ -103,26 +181,65 @@ section.bonus>div.box{
     text-align: center;
     padding:50px 0;  
     }
-
-    
-
-
-
-@media screen and (max-width:930px){
-    section.main>ul{        
-        /* margin: 0 auto; */
-        display: flex;
-}
-    section.main>ul>li{      
-        /* margin: 0 auto;  */
-    }
-    section.main>ul>li.img img{
-        order: 1;
-    }
-    section.main>ul>li.textarea{
-        order: 2;
-        padding: 20px 0;
-    }
+@media screen and (max-width:575.98px){
+    main section.slider>ul>li{
+        background-image: url(../style/img/Image-C2.jpg);
+        background-size: 100%;        
+        background-repeat: no-repeat;
+        height: 90vw;        
+     }
+     main section.slider>ul>li.second>div.product_box{
+        position: absolute;
+        width: 30%;
+        z-index: 3;
+        top:83%;
+        left:50%;
+        transform: translate(-50%,0);
+        }
+    main section.slider>ul>li.second>div.product_box>div.product_shadow>div.item_rotate{
+        position: relative;  
+        position: absolute;        
+        width: 100%;
+        top:0;
+        bottom:0; 
+        z-index: 3;  
+        transition:all 1s initial;
+        animation:translate 15s ease-out infinite;  
+        }    
+        
+    @keyframes shadow{
+            0%{
+                transform: translateY(0);        
+            }
+            50%{
+                transform: translateY(-40%);  
+            }
+            100%{
+                transform: translateY(0);  
+            }
+        }
+    @keyframes translate{
+            0%{
+                transform: translateY(0);        
+            }
+            50%{
+                transform: translateY(-40%);  
+            }
+            100%{
+                transform: translateY(0);  
+            }
+        }    
+    @keyframes rotate{
+            0%{
+                transform: rotate(0);        
+            }
+            50%{
+                transform: rotate(360deg);  
+            }
+            100%{
+                transform: rotate(0);  
+            }
+        }
 }
 @media screen and (max-width:800px){  
     section.bonus>div.box{
@@ -139,6 +256,25 @@ section.bonus>div.box{
     }
 }
 
+@media screen and (max-width:930px){
+
+    section.main>ul{        
+        /* margin: 0 auto; */
+        display: flex;
+}
+    section.main>ul>li{      
+        /* margin: 0 auto;  */
+    }
+    section.main>ul>li.img img{
+        order: 1;
+    }
+    section.main>ul>li.textarea{
+        order: 2;
+        padding: 20px 0;
+    }
+}
 
 
 
+
+ 
