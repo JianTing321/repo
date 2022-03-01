@@ -40,9 +40,9 @@ main section.slider>ul>li.second>img.item{
 div.video{
     position: absolute;
     position: relative;
-    width: 29%;    
+    width: 28%;    
     height: auto;
-    top: 50%;
+    top: 53%;
     left: 6%; 
     display: flex;  
     justify-content: center;    
