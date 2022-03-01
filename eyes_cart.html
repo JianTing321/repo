@@ -109,13 +109,13 @@
         <section class="main">
             <ul class="cart">
                 <li class="photo">
-                    <img class="product" src="./style/img/product/LM/01/01.png" alt="">
+                    <img class="mainImg product" src="./style/img/product/LM/01/01.png" alt="">
                     <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
                     <ul class="showbar">
-                        <li><img src="./style/img/product/LM/01/01.png" alt="" srcset=""></li>
-                        <li><img src="./style/img/product/LM/01/s1.jpg" alt="" srcset=""></li>
-                        <li><img src="./style/img/product/LM/01/s2.jpg" alt="" srcset=""></li>
-                        <li><img src="./style/img/product/LM/01/s3.jpg" alt="" srcset=""></li>
+                        <li><img class="smallImg" src="./style/img/product/LM/01/01.png" alt="" srcset=""></li>
+                        <li><img class="smallImg" src="./style/img/product/LM/01/s1.jpg" alt="" srcset=""></li>
+                        <li><img class="smallImg" src="./style/img/product/LM/01/s2.jpg" alt="" srcset=""></li>
+                        <li><img class="smallImg" src="./style/img/product/LM/01/s3.jpg" alt="" srcset=""></li>
                     </ul>
                 </li>
                 <li class="content">
@@ -188,7 +188,23 @@
                     nav_el.style.maxHeight = ""; // 移除 CSS： max-height
                 }
             });
-    
+        // -----------商品頁------------
+            let mainImg = document.getElementsByClassName("mainImg");
+            let smallImg = document.getElementsByClassName("smallImg");
+            smallImg[0].onclick = function(){
+                mainImg = smallImg[0].src         
+            } 
+            smallImg[1].onclick = function(){
+                mainImg = smallImg[1].src         
+            } 
+            smallImg[2].onclick = function(){
+                mainImg = smallImg[2].src         
+            } 
+            smallImg[3].onclick = function(){
+                mainImg = smallImg[3].src         
+            } 
+
+
             // document.addEventListener("DOMContentLoaded", function () {
             //     let btn_hamburger = document.getElementsByClassName("hamburger")[0];
             //     btn_hamburger.addEventListener("click", function () {
