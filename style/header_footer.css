@@ -25,7 +25,6 @@ body{
     width: 100%;
     box-sizing: border-box;
     overflow-x:hidden;
-    
     }
 header{
     padding-top: 10px;
@@ -39,6 +38,7 @@ header{
     z-index: 10;
     display: flex;
 }
+
 header div.box{
     align-items: center;
     width:70%;
@@ -177,7 +177,7 @@ footer>ul.footer_icon>li img{
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
-    z-index:30;
+    z-index:40;
 }
 div.login{    
     margin: auto;
@@ -192,7 +192,7 @@ div.login{
     transform:translate(-50%,-50%);
     z-index:20;    
     display: none;    
-}
+    }
 div.loginbox{    
     padding-top: 100px;
     display: flex;
@@ -338,10 +338,14 @@ div.moble_left{
     display: none;  
     width: 30%;    
 }
+header.bgc{
+    display:none;
+}
 @media screen and (max-width:730px){
     header>div.box{
     width: 90%;
     justify-content: center;
+    
     }  
 }
 @media screen and (max-width:575.98px){
@@ -353,11 +357,27 @@ header{
     height: 80px;
     padding-bottom: 5px;
     background-color: rgb(255, 255, 255);
+    z-index: 35;
     }
+header.bgc{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index:30;
+    }
+header.bgc.-on{
+    display:block;
+    }   
+
 header>div.box{
     width: 100%;
     justify-content: center;
     }  
+    
 header section.first>ul{
     box-sizing: border-box;
     display: flex;
@@ -411,7 +431,7 @@ div.moble_logo{
 div.moble_left{
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 30%;    
     }    
 header li{
     flex-grow: 1;
@@ -459,8 +479,9 @@ div.loginbox{
 a.login_close{
     position: absolute;
     top:5%;
-    left: 95%;
-    width: 4%;    
+    left: 50%;
+    width: 3%; 
+    transform: translateX(-50%);   
     }
 a.login_close>img{
     width: 100%;
@@ -486,6 +507,7 @@ img.login_logo{
     transform: translatex(-50%);
     z-index: -1;
     }
+
 }
 @media screen and (max-width:350px){
     img.login_logo{
@@ -517,6 +539,39 @@ img.login_logo{
     }
   } */
   
+/* ----------讀取器------------ */
+  
+  .preloader {/*   這是整個會蓋住畫面的底色色塊  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+  }
+  .preloader.hidden {/*   這是整個會蓋住畫面的底色色塊  */
+   animation:fadeOut 2.5s;
+   animation-fill-mode:forwards;
+  }
+  
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
-  
-  
+  .status {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    position: relative;   
+    left: 0;
+    top: 0;    
+  }
+  .status>img {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    position: absolute;    
+    width: 20%;   
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,50%);
+}
+/* ----------讀取器------------ */

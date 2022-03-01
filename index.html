@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +14,11 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="status">
+            <img src="./logogif.gif" />
+        </div>
+    </div>
     <div class="login-background js-show">
         <div class="login js-popup">
             <div class="loginbox">
@@ -107,6 +111,7 @@
             </div>
         </div>
     </header>
+    <header class="bgc"></header>
     <main>
         <section class="slider">
             <ul>
@@ -212,14 +217,32 @@
             <li><a href="#"><img src="./style/img/icon/footer/iconx3-03.svg"  alt="" srcset=""></a></li>
         </ul>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script src="./style/loader.js"></script>  
     <script>
+     
+        // let preloader = document.getElementsByClassName("preloader")[0];
+        // let status = document.getElementsByClassName("status")[0];
+        // preloader.addEventListener("load",function(){
+        //     allert("preloader")            
+        // });       
+        // status.addEventListener("load",function(){
+        //     allert("status")
+    // });
+
+
+        // $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+        //     $(".status").delay( 2000 ).fadeOut( 2000 ); //delay --> 延遲幾秒才fadeOut
+        //     $(".preloader").delay( 2000 ).fadeOut( 2000 );
+        // })
+        
         // -------大麥克(漢堡)-------
         document.addEventListener("DOMContentLoaded", function () {
+            let header_bgc =document.getElementsByClassName("bgc")[0];
             let btn_hamburger = document.getElementsByClassName("hamburger")[0];
-
             btn_hamburger.addEventListener("click", function () {
                 this.classList.toggle("is-active");
+                header_bgc.classList.toggle("-on");
                 let a_line = document.querySelector(".index").style.cssText = "border-bottom:none";
             });
         });
@@ -235,6 +258,9 @@
                 nav_el.style.maxHeight = ""; // 移除 CSS： max-height
             }
         });
+        
+
+
 
         // document.addEventListener("DOMContentLoaded", function () {
         //     let btn_hamburger = document.getElementsByClassName("hamburger")[0];

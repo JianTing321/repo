@@ -13,10 +13,16 @@
     <link rel="stylesheet" href="./style/hamburger.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="status">
+            <img src="./logogif.gif" />
+        </div>
+    </div>
     <div class="login-background js-show">
         <div class="login js-popup">
             <div class="loginbox">
                 <a class="login_close" href="#"><img src="./style/img/close.png" alt="" srcset=""></a>
+                <img class="login_logo" src="./img/logo/LOGO/logo+word-02-03.svg" alt="" srcset="">
                 <h4>會員登入</h4>
                 <ul class="login_ul">
                     <li>
@@ -103,6 +109,7 @@
             </div>
         </div>
     </header>
+    <header class="bgc"></header>
     <main>
         <section class="main">
             <ul class="map">
@@ -152,13 +159,15 @@
         </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./style/loader.js"></script>  
     <script>
         // -------大麥克(漢堡)-------
         document.addEventListener("DOMContentLoaded", function () {
+            let header_bgc =document.getElementsByClassName("bgc")[0];
             let btn_hamburger = document.getElementsByClassName("hamburger")[0];
-            
             btn_hamburger.addEventListener("click", function () {
                 this.classList.toggle("is-active");
+                header_bgc.classList.toggle("-on");
                 let a_line = document.querySelector(".map").style.cssText = "border-bottom:none";             
             });
         });
