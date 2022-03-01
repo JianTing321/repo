@@ -104,4 +104,10 @@ ul.showbar li:hover{
         height: 20%;     
         background-color: #fff;
     }
+    *{
+        text-align: center;
+    }
+    div.buttom{
+        display: inline-block;
+    }
 }

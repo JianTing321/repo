@@ -150,7 +150,7 @@ html{
 }
 
 @media screen and (max-width:575.98px) {  
-       
+    
     main section.slider>ul>li.lips/* 唇部產品 */{
         background-image: url(../style/img/product/LM/02/lips.jpg);
         background-size: 100%;        
@@ -200,6 +200,7 @@ html{
 }  
    
     ul.product li{
+        
         /* width: 575px; */
         flex-basis: 570px;
         /* text-align: center;  
@@ -211,6 +212,7 @@ html{
         margin:0 auto; 
         width: 100%
     }
+   
 }
 
 
