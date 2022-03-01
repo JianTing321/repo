@@ -109,7 +109,7 @@
         <section class="main">
             <ul class="cart">
                 <li class="photo">
-                    <img class="mainImg product" src="./style/img/product/LM/01/01.png" alt="">
+                    <img id="mainImg" class="mainImg product" src="./style/img/product/LM/01/01.png" alt="">
                     <img class="favorite" src="./style/img/icon/favorite/hallowheart-01.svg" alt="" srcset="">
                     <ul class="showbar">
                         <li><img class="smallImg" src="./style/img/product/LM/01/01.png" alt="" srcset=""></li>
@@ -163,8 +163,9 @@
             <li><a href="#"><img src="./style/img/icon/footer/iconx3-02.svg" alt="" srcset=""></a></li>
             <li><a href="#"><img src="./style/img/icon/footer/iconx3-03.svg" alt="" srcset=""></a></li>
         </ul>
-        <footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+    </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+            
         <script>
             // -------大麥克(漢堡)-------
             document.addEventListener("DOMContentLoaded", function () {
@@ -188,22 +189,22 @@
                     nav_el.style.maxHeight = ""; // 移除 CSS： max-height
                 }
             });
-        // -----------商品頁------------
-            let mainImg = document.getElementsByClassName("mainImg");
+        // -----------商品頁------------//
+            let mainImg = document.getElementById("mainImg");
             let smallImg = document.getElementsByClassName("smallImg");
             smallImg[0].onclick = function(){
-                mainImg = smallImg[0].src         
+                mainImg.src = smallImg[0].src;
             } 
             smallImg[1].onclick = function(){
-                mainImg = smallImg[1].src         
+                mainImg.src  = smallImg[1].src;
             } 
             smallImg[2].onclick = function(){
-                mainImg = smallImg[2].src         
+                mainImg.src  = smallImg[2].src;     
             } 
             smallImg[3].onclick = function(){
-                mainImg = smallImg[3].src         
+                mainImg.src  = smallImg[3].src;        
             } 
-
+        // -----------商品頁------------//
 
             // document.addEventListener("DOMContentLoaded", function () {
             //     let btn_hamburger = document.getElementsByClassName("hamburger")[0];

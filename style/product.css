@@ -93,9 +93,7 @@ main section.slider>ul>li.eyes>img.item{
     100%{
         transform: rotatez(20deg);
     }
-}
-   
-    
+}  
 main section.main{    
     margin:0 auto; 
     max-width: 70%;

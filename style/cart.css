@@ -29,13 +29,12 @@ ul.showbar{
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 0;
+    left: 10%;
 }
 ul.showbar li{
     width:10%;
-    height: 10%; 
-    
+    height: 10%;     
     background-color: #fff;
 }
 ul.showbar li img{
@@ -55,13 +54,13 @@ main section.main>ul.cart>li>img.product{
 main section.main>ul.cart>li>img.favorite{
     width: 25px;
     position: absolute;
-    top:10%;
-    right: 10%;
+    top:15%;
+    right: 15%;
+    
 }
 main section.main>ul.cart>li:hover{
     /* outline: solid 0.5px gray; */
-   
-    border-radius: 5px;
+       border-radius: 5px;
 }
 div.choice>ul{
     display: flex;    
@@ -89,9 +88,7 @@ div.buttom{
     border-radius: 5px;
     text-align: center;
 }
-ul.cart>li>img.product{
-    width:20%;
-}
+
 div.choice>ul>li:hover{
     outline: black 1px solid;
     cursor: pointer;
@@ -101,3 +98,10 @@ ul.showbar li:hover{
     cursor: pointer;
 }
 
+@media screen and (max-width:575.98px){
+    ul.showbar li{
+        width:20%;
+        height: 20%;     
+        background-color: #fff;
+    }
+}
