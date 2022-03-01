@@ -242,6 +242,9 @@ li.img>img.fourth{
     transition:all 1s initial;  
     animation: seeweed 5s ease-out infinite;
 }
+html{
+    overflow-x: hidden;        
+}
 
 @keyframes seeweed{
     0%{

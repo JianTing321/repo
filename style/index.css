@@ -71,7 +71,7 @@ main section.slider>ul>li.second>div.product_box>div.product_shadow>div.item_rot
     left:0; 
     transition:all 1s initial;
     animation:rotate 15s ease-out infinite;
-        }
+    }
 
 
 @keyframes shadow{
@@ -180,6 +180,9 @@ section.bonus ul>li img{
 section.bonus>div.box{
     text-align: center;
     padding:50px 0;  
+    }
+html{
+    overflow-x: hidden;        
     }
 @media screen and (max-width:575.98px){
     main section.slider>ul>li{

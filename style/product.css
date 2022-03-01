@@ -147,6 +147,9 @@ main section.main>ul.product>li:hover {
 main section.main>ul.product>li a img:hover{
     transform: scale(1.1);
 }
+html{
+    overflow-x: hidden;        
+}
 
 @media screen and (max-width:575.98px) {  
        
@@ -164,7 +167,7 @@ main section.main>ul.product>li a img:hover{
         top:70%;
         right:30%;           
     }
-  
+     
     main section.slider>ul>li.lips>img.item{       
         transform: rotatez(220deg);   
         animation:none;
@@ -191,6 +194,8 @@ main section.main>ul.product>li a img:hover{
         transform: rotatez(220deg);   
         animation:none;
     }
+  
+    
     @keyframes eyes_item{
        all{ 
        }         
