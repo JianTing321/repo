@@ -162,9 +162,9 @@ main section.main>ul.product>li a img:hover{
         width: 60%;
         z-index: 3;
         top:70%;
-        right:30%;
-           
+        right:30%;           
     }
+  
     main section.slider>ul>li.lips>img.item{       
         transform: rotatez(220deg);   
         animation:none;
